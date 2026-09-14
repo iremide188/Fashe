@@ -246,3 +246,36 @@
     }
 
 }
+
+/* ---------- mobile view ---------- */
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0px 15px;
+    }
+    .icon .element p,
+    .icon .element span{
+        font-size: 10px;
+    }
+    .topbar .element .toggle{
+        display: block;
+    }
+    .topbar .element ul{
+        display: none;
+    }
+    .bg .text h1{
+        font-size: 28px;
+    }
+    .bg .text p{
+        font-size: 14px;
+    }
+    .footer .element .left{
+        width: 100%;
+    }
+    .footer .element form{
+        width: 100%;
+    }
+    .footer .element .left input,
+    .footer .element form input{
+        width: 100%;
+    }
+}

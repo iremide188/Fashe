@@ -971,12 +971,10 @@
         margin-left: -30px;
     }
 
-}
 .logo .element .first .topbar-toggle{
         display: grid !important;
     }
     .logo .element .first .topbar-toggle{
-        display: none;
         height: min-content;
         margin: 18px -10px 0 0;
         cursor: pointer;
@@ -991,7 +989,7 @@
         transition: .4s;
         border-radius: 10%;
     }
-    input{
+    input[type="checkbox"]{
         display: none;
     }
     input:checked ~ .topbar-toggle{
@@ -999,5 +997,82 @@
     }
 
 
-
-
+/* ---------- mobile view ---------- */
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0px 15px;
+    }
+    .icon .element p,
+    .icon .element span{
+        font-size: 10px;
+    }
+    .icon .element button{
+        padding: 2px 8px;
+    }
+    .logo .element{
+        padding-top: 20px;
+        align-items: center;
+    }
+    .logo .element .first ul{
+        gap: 6px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    .logo .element .first .drop{
+        margin-left: 10px;
+    }
+    .bg .text h1{
+        font-size: 28px;
+    }
+    .bg .text p{
+        font-size: 14px;
+    }
+    .bg .angle i{
+        margin-right: 10px;
+    }
+    .featured .element h1{
+        font-size: 24px;
+    }
+    .beauty .element .imag,
+    .beauty .element .glsses{
+        width: 100%;
+        margin-left: 0;
+    }
+    .beauty .element .imag img,
+    .beauty .element .glsses img{
+        width: 100%;
+        height: auto;
+    }
+    .blog .element,
+    .blog .element .blog1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .follow .element{
+        gap: 5px;
+    }
+    .follow .element .images img{
+        width: 100%;
+        height: auto;
+    }
+    .pics .element .signup a button{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .footer .element{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer .element form,
+    .footer .element .left{
+        width: 100%;
+    }
+    .footer .cards{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .back{
+        bottom: 30px;
+        right: 15px;
+    }
+}
