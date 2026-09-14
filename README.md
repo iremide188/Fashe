@@ -4,20 +4,20 @@ A fashion e-commerce front-end built with plain HTML, CSS and JavaScript — no 
 
 ## Pages
 
-- `fashe.html` — main store page (home)
+- `index.html` — main store page (home)
 - `shop.html` — shop page
 - `index.html` — small navigation demo page
 
 ## Structure
 
 ```
-├── fashe.html
+├── index.html
 ├── shop.html
 ├── index.html
 ├── style1.css
 ├── css/
 │   ├── style.css          # main stylesheet
-│   └── style shop.css     # shop page stylesheet
+│   └── style-shop.css    # shop page stylesheet
 ├── js/
 │   └── script.js
 ├── image/                 # all site images
@@ -26,7 +26,7 @@ A fashion e-commerce front-end built with plain HTML, CSS and JavaScript — no 
 
 ## Running locally
 
-Just open `fashe.html` in a browser, or serve the folder with any static server:
+Just open `index.html` in a browser, or serve the folder with any static server:
 
 ```bash
 npx serve .
