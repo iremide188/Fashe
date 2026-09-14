@@ -11,9 +11,8 @@ A fashion e-commerce front-end built with plain HTML, CSS and JavaScript — no 
 ## Structure
 
 ```
-├── index.html
+├── index.html      (was fashe.html)
 ├── shop.html
-├── index.html
 ├── style1.css
 ├── css/
 │   ├── style.css          # main stylesheet
