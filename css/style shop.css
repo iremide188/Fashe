@@ -1,0 +1,248 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .container{
+        margin: 0px 60px;
+    }
+    .icon{
+        background-color: #f5f5f5;
+        color: #888;
+        padding: 10px 0px;
+    }
+    .icon .element{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 25px;
+    }
+    .icon .element a{
+        padding: 0px 8px;
+        color: #888;
+    }
+    .icon .element p{
+        font-family: "montserrat-regular";
+        font-size: 13px;
+    }
+    .icon .element span{
+        font-family: "montserrat-regular";
+        font-size: 13px;
+    }
+    .icon .element button{
+        background-color: white;
+        border: 1px solid #000;
+        padding: 3px 16px;
+    }
+    .logo{
+        background-color: white;
+        /* border: 1px solid red; */
+        height: 80px;
+    }
+    .logo .element{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .logo .element ul a{
+        text-decoration: none;
+        color: #888;
+    }
+    .logo .element ul li{
+        list-style: none;
+        text-transform: capitalize;
+    }
+    .logo .element ul li a:hover{
+        border-bottom: 1px solid #000;
+    }
+    .logo .element ul span a:hover{
+        border-bottom: 1px solid black;
+    }
+    .logo .element span a{
+        color: rgba(255, 0, 0, 0.61);
+        text-transform: capitalize;
+    }
+    .logo .element ul{
+        display: flex;
+        gap: 10px;
+    }
+    .logo .element .first ul li .drop a:hover{
+        color: red;
+        display: block;
+    }
+    .logo .element .first ul .drop { 
+        display: none;
+        background-color: black;
+        color: white;
+        position: absolute;
+        padding: 10px;
+        min-width: 10%;
+    }
+    .logo .element .first ul li .drop li{
+        margin-bottom: 10px;
+    }
+    .logo .element ul li .drop li a{
+        color: white;
+    }
+    .logo .element ul li .drop{
+        display: block;
+        color: red;
+    }
+    .logo .element .first ul li:hover .drop{
+        text-decoration: underline;
+        color: black;
+        display: block;
+    }
+    .logo .element .ri img{
+        margin-left: 10px;
+    }
+    .logo .element .ri span img{
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+    .bg{
+        width: 100%;
+        min-height: 60vh;
+        background: url(../image/heading-pages-02.jpg);
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .bg .text{
+        color: white;
+        /* padding-bottom: 200px; */
+        padding-top: 150px;
+        font-size: 40px;
+        transition: .4s ease-in-out;
+    }
+    .bg .text h1{
+        font-size: 60px;
+        /* margin-bottom: 130px; */
+        padding-bottom: 10px;
+    }
+    .bg .text p{
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .bg .text button{
+        font-size: 20px;
+        background-color: white;
+        text-transform: capitalize;
+        border: none;
+        border-radius: 90px;
+        padding: 10px 25px;
+        font-weight: lighter;
+        transition: .5s ease;
+    }
+    .bg .text button:hover{
+        background-color: red;
+        color: white;
+    }
+    .cat .element{
+        
+    }
+.footer {
+    background-color: #f0f0f0;
+    margin-top: 30px;
+}
+.footer .element{
+    /* background-color: #f0f0f0; */
+    gap: 50px;
+    display: flex;
+}
+.footer .element h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+.footer .element p{
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 50px;
+}
+.footer .element a{
+    padding-right: 10px;
+    color: #888;
+}
+.footer .element .middle{
+    display: flex;
+    gap: 90px;
+}
+.footer .element .middle a{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer .element .middle a li{
+    padding-top: 10px;
+    transition: .3s ease-in;
+    font-size: 16px;
+}
+.footer .element .middle a li:hover{
+    color: red;
+}
+.footer .element form input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+.footer .element button{
+    background-color: black;
+    color: white;
+    padding: 12px 45px;
+    transition: .4s ease-in;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+.footer .element button:hover{
+    background-color: red;
+    color: white;
+}
+.footer .cards {
+    margin-left: 510px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* tablet view */
+@media screen  and (max-width:1000px) {
+    .logo{
+        background-color: white;
+    }
+    .topbar .element ul{
+        display: none;
+    }
+    .topbar .element .toggle{
+        display: block;
+    }
+    .footer .element{
+        display: block;
+    }
+    .footer .element .left{
+        display: block;
+        width: 1005%;
+    }
+    .footer .element form{
+        width: 100%;
+    }
+
+}

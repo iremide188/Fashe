@@ -1,0 +1,1003 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .container{
+        margin: 0px 60px;
+    }
+    .back{
+        position: fixed;
+        background-color: aqua;
+        color: #fff;
+        z-index: 104;
+        padding: 10px;
+        border-radius: 50%;
+        bottom: 50px;
+        right: 30px;
+        display: none;
+    }
+    .back a{
+        color: #fff;
+    }
+    #preload{
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+        background-color: #888;
+        z-index: 4;
+    }
+    #preload::before{
+        content: "";
+        position: absolute;
+        top: calc(50% - 30%);
+        left: calc(50% - 30%);
+        border: 6px solid blueviolet;
+        border-top-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: animate-preloader 1s linear infinite;
+    }
+    @keyframes animate-preloader{
+        0%{
+            transform:rotate(90deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .icon{
+        background-color: #f5f5f5;
+        color: #888;
+        position: fixed;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .icon .element{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        height: 25px;
+    }
+    .icon .element a{
+        padding: 0px 8px;
+        color: #888;
+    }
+    .icon .element p{
+        font-family: "montserrat-regular";
+        font-size: 13px;
+    }
+    .icon .element span{
+        font-family: "montserrat-regular";
+        font-size: 13px;
+    }
+    .icon .element button{
+        background-color: white;
+        border: 1px solid #000;
+        padding: 3px 16px;
+    }
+    .logo{
+        background-color: white;
+        width: 100%;
+        height: 80px;
+        z-index: 3;
+        position: fixed;
+    }
+    .logo .element{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .logo .element ul a{
+        text-decoration: none;
+        color: #888;
+    }
+    .logo .element ul li{
+        list-style: none;
+        text-transform: capitalize;
+    }
+    .logo .element ul li a:hover{
+        border-bottom: 1px solid #000;
+    }
+    .logo .element ul span a:hover{
+        border-bottom: 1px solid black;
+    }
+    .logo .element span a{
+        color: rgba(255, 0, 0, 0.61);
+        text-transform: capitalize;
+    }
+    .logo .element ul{
+        display: flex;
+        gap: 10px;
+    }
+    .logo .element .first ul li .drop a:hover{
+        color: red;
+        display: block;
+    }
+    .logo .element .first ul .drop { 
+        display: none;
+        background-color: black;
+        color: white;
+        position: absolute;
+        padding: 10px;
+        min-width: 10%;
+    }
+    .logo .element .first ul li .drop li{
+        margin-bottom: 10px;
+    }
+    .logo .element ul li .drop li a{
+        color: white;
+    }
+    .logo .element ul li .drop{
+        display: block;
+        color: red;
+    }
+    .logo .element .first ul li:hover .drop{
+        text-decoration: underline;
+        color: black;
+        display: block;
+    }
+    .logo .element .ri img{
+        margin-left: 10px;
+    }
+    .logo .element .ri span img{
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+    .bg{
+        width: 100%;
+        height: 80vh;
+        background: url(../image/background\ image);
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .bg .angle {
+        justify-content: space-between;
+        margin: 0px 50px;
+        width: 90%;
+        /* display: none; */
+        display: flex;
+        margin-top: -100px;
+        position: absolute;
+    }
+    .bg .angle i{
+        padding: 10px;
+        border: 1px solid black;
+        display: none;
+        border-radius: 150%;
+        transition: .2s ease;
+        color:white;
+        background-color: #000;
+    }
+    .bg .angle i:hover{
+        background-color: rgba(255, 0, 0, 0.411);
+        color: white;
+    }
+    .bg:hover .angle i{
+        display: block;
+    }
+    .bg .text{
+        color: white;
+        padding-top: 200px;
+        font-size: 40px;
+        transition: .4s ease-in-out;
+    }
+    .bg .text h1{
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+    .bg .text p{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .bg .text button{
+        font-size: 20px;
+        background-color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 90px;
+        padding: 10px 25px;
+        font-weight: lighter;
+        transition: .5s ease;
+    }
+    .bg .text button:hover{
+        background-color: red;
+        color: white;
+    }
+    .pics .element .signup {
+        background-color: #21252913;
+        height: 339px;
+        width: 370px;
+        text-align: center;
+    }
+    .pics .element .signup h3{
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-top: 80px;
+        padding-bottom: 8px;
+    }
+    .pics .element .signup p{
+        color: #888;
+        font-size: 15px;
+        padding-bottom: 40px;
+    }
+    .pics .element .signup button{
+        background-color: black;
+        color: white;   
+        font-size: 16px;
+        text-transform: uppercase;
+        border-radius: 90px;
+        padding: 15px 25px;
+    }
+    .pics .element {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .pics .element .first, .second, .third {
+        padding: 0px 15px;
+    }
+    .pics .element .first .image1 img{
+        width: 370px;
+        height: 478px;
+        transition: .3s ease-in-out;
+    }
+    .pics .element .first .image1 img:hover{
+        transform: scale(1.05);
+    }
+    .pics .element .first .image1 h5:hover{
+        background-color: red;
+        border: none;
+    }
+    .pics .element .first .image1{
+        position: relative;
+        overflow: hidden;
+    }
+    .pics .element .first .image1 h5{  
+        top: 420px;
+        position: absolute;
+        border: 1px solid white;
+        padding: 15px 40px;
+        margin-left: 110px;
+        transition: .4s ease-in-out;
+        background-color: white;
+    }
+
+    .pics .element .first .image4{
+        position: relative;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .pics .element .first .image4 h5{
+        position: absolute;
+        top: 280px;
+        padding: 15px 40px;
+        border: 1px solid white;
+        background-color: white;
+        transition: .4s ease-in-out;
+        margin-left: 110px;
+    }
+    .pics .element .first .image4 h5:hover{
+        background-color: red;
+        border: none;
+    }
+    .pics .element .first .image4 img{
+        width: 370px;
+        height: 339px;
+        transition: ease-in-out;
+    }
+    .pics .element .first .image4 img:hover{
+        transform: scale(1.05);
+    }
+    .pics .element .second .image2 img{
+        width: 370px;
+        height: 339px;
+        transition: .3s ease-in-out;
+    }
+ 
+    .pics .element .second .image2{
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .pics .element .second .image2 img:hover{
+        transform: scale(1.05);
+    }
+    .pics .element .second .image2 h5{
+        position: absolute;
+        top: 280px;
+        padding: 15px 40px;
+        border: 1px solid white;
+        background-color: white;
+        margin-left: 110px;
+        transition: .4s;
+    }
+    .pics .element .second .image2 h5:hover{
+        background-color: red;
+        border: none;
+    }
+    .pics .element .second .image5 img{
+        width: 370px;
+        height: 478px;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+    .pics .element .second .image5 {
+       overflow: hidden;
+    }
+    .pics .element .second .image5 img:hover{
+        transform: scale(1.05);
+    }
+    .pics .element .second .image5 h5{
+        position: absolute;
+        bottom: -736px;
+        padding: 15px 40px;
+        border: 1px solid white;
+        background-color: white;
+        margin-left: 110px;
+        transition: .4s ease-in-out;
+    }
+    .pics .element .second .image5 h5:hover{
+        background-color: red;
+        border: none;
+    }
+
+    .pics .element .third .image3 img{
+        width: 370px;
+        height: 478px;
+        transition: .3s ease-in-out;
+         position: relative;
+    }
+    .pics .element .third .image3{
+       overflow: hidden;
+    }
+    .pics .element .third .image3 img:hover{
+        transform: scale(1.05);
+    }
+    .pics .element .third .image3 h5{
+        position: absolute;
+        bottom: -370px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.884);
+        padding: 15px 40px;
+        margin-left: 110px;
+        transition: .4s ease-in-out;
+    }
+    .pics .element .third .image3 h5:hover{
+        background-color: rgba(255, 0, 0, 0.815);
+        border: none;
+    }
+    .pics .element .signup{
+        height: 339px;
+        width: 370px;
+        margin-top: 20px;
+    }
+    .pics .element .signup button:hover{
+        background-color: red;
+        color: white;
+        border: none;
+    }
+    .featured .element .text a{
+        margin-left: -20px;
+    }
+    .featured .elemecnt .text{
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 90px;  
+    }
+    .featured .element .images img{
+        width: 250px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .featured .element .images a{
+        text-transform: capitalize;
+        padding-left: 20px;
+        text-decoration: none;
+        font-weight: lighter;
+        color: #888;
+        transition: .3s ease-in-out;
+        padding-right: 100px;
+    }
+    .featured .element .images a:hover{
+        color: red;
+    }
+    .featured .element .images p{
+        text-align: left;
+        padding-left: 35px;
+        padding-top: 20px;
+    }
+    .featured .element .images{
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+    }
+    .featured .element .image1 span{
+        position: absolute;
+        left: 90px;
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 90px;
+        margin-top: 10px;
+        background-color: aqua;
+    }
+    .featured .element .images .image3 .strike {
+        position: absolute;
+        bottom: 10px;
+        color: red;
+        top: 1802px;
+        background-color: #fff;
+        left: 785px;
+        font-size: 16px;
+        font-weight: lighter;
+
+    }
+    .featured .element .images .image2 .strike {
+        position: absolute;
+        bottom: 10px;
+        color: red;
+        top: 1802px;
+        background-color: #fff;
+        left: 475px;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .featured .element .images .image1 .strike {
+        position: absolute;
+        bottom: 10px;
+        color: red;
+        top: 1788px;
+        background-color: #fff;
+        left: 146px;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    .featured .element .images .image4 .strike {
+        position: absolute;
+        bottom: 10px;
+        color: red;
+        top: 361px;
+        left: 90px;
+        font-weight: lighter;
+    }
+    .featured .element .images .image4 p{
+        text-decoration: line-through;
+    }
+    .featured .element .images .image4 {
+        position: relative;
+    }
+    .featured .element .images .image4 nav{
+        position: absolute;
+        left: 50px;
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 90px;
+        margin-top: -310px;
+        background-color: red;
+    }
+    .beauty{
+        background-color: #88888818;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-top: 150px;
+    }
+    .beauty .element{
+        display: flex;
+        gap: 30px;
+    }
+    .beauty .element .imag{
+        overflow: hidden;
+    }
+    .beauty .element .imag img{
+        width: 570px;
+        height: 426px;
+        position: relative;
+        transition: .3s ease-in-out;
+    }
+    .beauty .element .imag img:hover{
+        transform: scale(1.05);
+    }
+    .beauty .element .text {
+        transition: .4s ease-in;
+    }
+    .beauty .element .text h2{
+        top: 2300px;
+        position: absolute;
+        left: 240px;
+        color: white;
+        text-transform: capitalize;
+        font-size: 36px;
+    }
+    .beauty .element .text h1{
+        font-size: 45px;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 2350px;
+        left: 200px;
+    }
+    .beauty .element .text a{
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 16px;
+        text-decoration: none;
+        top: 2400px;
+        left: 250px;
+
+    }
+    .beauty .element .text a:hover{
+     text-decoration: underline;   
+    }
+    .beauty .element .glsses img{
+        width: 570px;
+        position: relative;
+        transition: .3s ease-in;
+        height: 426px;
+    }
+    .beauty .element .glsses {
+        overflow: hidden;
+    }
+    .beauty .element .glsses img:hover{
+        transform: scale(1.05);
+    }
+    .beauty .element .glsses .tex1t h5 a{
+        position: absolute;
+        color: black;
+        font-weight: lighter;
+        font-size: 15px;
+        margin-left: 210px;
+        top: 2350px;
+    }
+    .beauty .element .glsses .tex1t span{
+        position: absolute;
+        margin-top: -140px;
+        padding-left: 240px;
+    }
+    .beauty .box{
+        display: flex;
+        /* margin-top: 30px; */
+        font-weight: lighter;
+    }
+    .beauty .element .box .box1 span{
+        position: absolute;
+        margin-left: -450px;
+        padding: 5px 10px;
+        margin-top: 350px;
+        text-align: center;
+        border: 1px solid #888;
+    }
+    .beauty .element .box .box2 span{
+        position: absolute;
+        margin-left: -380px;
+        padding: 5px 17px;
+        margin-top: 350px;
+        text-align: center;
+        border: 1px solid #888;
+    }
+     .beauty .element .box .box3 span{
+        position: absolute;
+        margin-left: -310px;
+        padding: 5px 10px;
+        margin-top: 350px;
+        text-align: center;
+        border: 1px solid #888;
+    }
+     .beauty .element .box .box4 span{
+        position: absolute;
+        margin-left: -240px;
+        padding: 5px 10px;
+        margin-top: 350px;
+        text-align: center;
+        border: 1px solid #888;
+    }
+    .blog .element{
+        display: flex;
+        justify-content: space-between;
+    }
+    .blog h1{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 70px 0px;
+    }
+    .blog .blog1 {
+        overflow: hidden;
+    }
+    .blog .blog1 img{
+        height: 276px;
+        transition: .4s ease-in;
+        position: relative;
+        width: 370px;
+    }
+    .blog .blog1 img:hover{
+        transform: scale(1.019);
+    }
+   .blog .blog1 .text a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+   }
+   .blog .blog1 .text span{
+    font-size: 13px;
+   }
+   .blog .blog1 .text p{
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+   }
+.follow h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.follow .element {
+    display: inline-table;
+    margin-bottom: 60px;
+}
+.follow .element img {
+    height: 260px;
+    width: 260px;
+}
+.shipping .element {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.shipping .element .text{
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 100px;
+    height: 60px;
+    /* align-items: center; */
+    border-right: 1px solid black;
+}
+.shipping .element .tex1t{
+    padding-right: 70px; 
+    text-align: center;
+    padding-top: 30px;
+}
+.shipping .element h4{
+    font-weight: 540;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.shipping .element a{
+    text-decoration: none;
+    color: #888;
+    transition: .3s ease-in;
+    font-size: 14px;
+    align-self: center;
+}
+.shipping .element p{
+    color: #888;
+}
+.shipping .element a:hover{
+    color: red;
+}
+.footer {
+    background-color: #f0f0f0;
+    margin-top: 30px;
+}
+.footer .element{
+    /* background-color: #f0f0f0; */
+    gap: 50px;
+    display: flex;
+}
+.footer .element h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+.footer .element p{
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 50px;
+}
+.footer .element a{
+    padding-right: 10px;
+    color: #888;
+}
+.footer .element .middle{
+    display: flex;
+    gap: 90px;
+}
+.footer .element .middle a{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer .element .middle a li{
+    padding-top: 10px;
+    transition: .3s ease-in;
+    font-size: 16px;
+}
+.footer .element .middle a li:hover{
+    color: red;
+}
+.footer .element form input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-right: 40px;
+    outline: none;
+    padding-bottom: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+.footer .element button{
+    background-color: black;
+    color: white;
+    padding: 12px 45px;
+    transition: .4s ease-in;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+.footer .element button:hover{
+    background-color: red;
+    color: white;
+}
+.footer .cards {
+    margin-left: 510px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* .med{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet view */
+@media screen and (max-width: 1000px) {
+    .logo .element .first .top{
+        display: grid;
+        position: absolute;
+        background: #248863;
+        /* color: white; */
+        width: 30%;
+        top: 235px;
+        margin-left: 280px;
+        /* height: 100%; */
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+    }
+    .logo{
+        height: 170px;
+        /* border: 2px solid red; */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    .logo .element .ri{
+        display: none;
+    }
+    .logo .element .first .drop{
+        margin-left: 50px;
+    }
+    .logo .element .first ul{
+        display: block;
+        font-size: 15px;
+        top: 50px;
+        position: fixed;
+        margin-left: -140px;
+    }
+    .bg{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .bg p{
+        font-size: 16px;
+    }
+    .bg .text h1{
+        font-size: 40px;
+    }
+    .bg .angle i{
+        margin-right: 20px;
+    }
+    .third .image3 h5{
+        top: 2750px;
+    }
+    .second .image5 h5{
+        top: 2254px;
+    }
+    .second .image2{
+        margin-top: 20px;
+    }
+    .third .image3{
+        margin-top: 20px;
+        position: relative;
+    }
+    .third .image3 h5{
+        /* margin-bottom: 150px; */
+        position: absolute;
+        z-index: 3;
+        top: 400px;
+        margin-bottom: 90px;
+    }
+
+    .pics .element .signup a button{
+        padding: 15px 45px;
+        transition: .5s ease-in;
+    }
+    .featured .element h1{
+        font-size: 30px;
+    }
+    .beauty .element {
+        display: flex;
+        flex-direction: column;
+    }
+    .beauty .element .imag{
+        width: 450px;
+        margin-left: -50px;
+        /* position: relative; */
+    }
+    .beauty .element .imag img{
+        position: relative;
+    }
+    .beauty .element .imag .text h2{
+        font-size: 20px;
+        display: flex;
+        padding-left: 30px;
+        text-align: center;
+    }
+    .beauty .element .imag .text a{
+        font-size: 20px;
+    }
+
+    .beauty .element .imag .text{
+        top: 1900px;
+        border: 2px solid red;
+        margin-left: -80px;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+    }
+    .beauty .element .glsses{
+        width: 450px;
+        /* z-index: -1; */
+        margin-left: -50px;
+        position: relative;
+    }
+    .beauty .element .glsses img{
+        margin-left: -40px;
+        position: relative;
+    }
+    .beauty .element .glsses .tex1t h5{
+        text-align: center;
+        margin-left: 30px;
+        position: relative;
+    }
+    .beauty .element .glsses .tex1t {
+        border: 2px solid red;
+        position: absolute;
+        top: 300px; 
+        margin-left: 30px;
+        color: #000;
+    }
+    .featured .element .text h1{
+        text-transform: capitalize;
+        font-size: 30px;
+        text-align: center;
+        margin: 70px 0px;
+    }
+    .featured .element .image1 img{
+        width: 440px;
+        height: 500px;
+        margin-left: -30px;
+    }
+    .featured .element .image1 .new{
+        margin-top: -490px;
+    }
+    .featured .element .image1 a{
+        margin-left: -50px;
+        text-transform: capitalize;
+    }
+    .featured .element .image1 p{
+        margin-left: -5px;
+        margin-top: -1940px;
+        position: absolute;
+        z-index: 3;
+    }
+    .featured .element .image2 {
+        display: none;
+    }
+    .featured .element .image3{
+        display: none;
+    }
+    .featured .element .image4{
+        display: none;
+    }
+    .blog .element{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog .element .blog1 img{
+        width: 100%;
+    }
+    .follow h1{
+        font-size: 32px;
+    }
+    .follow .element img{
+        width: 100%;
+        height: 100%;
+    }
+    .shipping .element{
+        display: block;
+        border-right: none;
+    }
+    .shipping .element .text{
+        display: block;
+        border-bottom: 1px solid black;
+    }
+    .footer .element{
+        /* font-size: 16px; */
+        display: block;
+    }
+    .footer .element .middle{
+        display: block;
+    }
+    form{
+        width: 100%;
+    }
+    .footer .cards{
+        display: flex;
+        margin-top: 80px;
+        margin-left: -30px;
+    }
+
+}
+.logo .element .first .topbar-toggle{
+        display: grid !important;
+    }
+    .logo .element .first .topbar-toggle{
+        display: none;
+        height: min-content;
+        margin: 18px -10px 0 0;
+        cursor: pointer;
+    }
+    .logo .element .first .topbar-toggle{
+        width: 40px;
+        height: 5px;
+        /* color: red; */
+        margin-bottom: 10px;
+        background: white;
+        z-index: 2;
+        transition: .4s;
+        border-radius: 10%;
+    }
+    input{
+        display: none;
+    }
+    input:checked ~ .topbar-toggle{
+        margin-top: 35px;
+    }
+
+
+
+
