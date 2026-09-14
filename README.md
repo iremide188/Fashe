@@ -6,17 +6,16 @@ A fashion e-commerce front-end built with plain HTML, CSS and JavaScript — no 
 
 - `index.html` — main store page (home)
 - `shop.html` — shop page
-- `index.html` — small navigation demo page
 
 ## Structure
 
 ```
-├── index.html      (was fashe.html)
-├── shop.html
+├── index.html       # main store page (was fashe.html)
+├── shop.html        # shop page
 ├── style1.css
 ├── css/
 │   ├── style.css          # main stylesheet
-│   └── style-shop.css    # shop page stylesheet
+│   └── style-shop.css     # shop page stylesheet
 ├── js/
 │   └── script.js
 ├── image/                 # all site images
